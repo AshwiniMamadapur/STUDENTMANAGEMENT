@@ -1,1 +1,89 @@
+# Student Enrollment System
 
+## Project Description
+
+The **Student Enrollment System** is a web-based application that allows users to manage student data. It is built using **HTML**, **JavaScript**, **Bootstrap**, and **jQuery**. The backend uses **JPDB** (JSON Power DB) through the **Talend API** for data storage and retrieval. The project is developed using **NetBeans** as the IDE.
+
+## Features
+
+* Add new student records
+* Update existing student records
+* Reset the form to enter new data
+* Validate data before submission
+* Store and update data using JPDB via the Talend API
+
+## Technologies Used
+
+* Frontend: HTML, CSS, JavaScript, Bootstrap, jQuery
+* Backend: JPDB (JSON Power DB) via Talend API
+* IDE: NetBeans
+
+## Project Structure
+
+```
+├── index.html        # Main HTML file with form and JS functions
+├── css/              # Styling files
+├── js/               # Script files
+└── README.md         # Project documentation
+```
+
+## Installation and Setup
+
+### Prerequisites
+
+* NetBeans IDE
+* Node.js
+* Git
+* JPDB Account with Talend API access
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/AshwiniMamadapur/STUDENTMANAGEMENT.git
+   ```
+
+2. Open the project in NetBeans:
+
+   * Go to `File -> Open Project` and select the cloned folder.
+
+3. Configure JPDB API:
+
+   * Replace `your_api_token` with the actual JPDB API token in the JavaScript file.
+
+4. Run the project:
+
+   * Right-click on `index.html` -> Run
+
+## Talend API Configuration
+
+* Base URL: `http://api.login2explore.com:5577/api/iml`
+* Database Name: `SCHOOL-DB`
+* Relation Name: `STUDENT-TABLE`
+* Authentication Token: Replace `your_api_token` with the actual token.
+
+## How to Use
+
+1. Enter the **Roll Number** and press **Tab**.
+2. If the student exists:
+
+   * The form is populated with existing data.
+   * Update the necessary fields and click **Update**.
+3. If the student does not exist:
+
+   * Fill in the form and click **Save**.
+4. To reset the form, click **Reset**.
+
+## Troubleshooting
+
+* **Database License Limit Exceeding**: Check your JPDB license limits.
+* **Form Not Opening in NetBeans**: Make sure the project is set up correctly. Try cleaning and rebuilding.
+
+## Contributing
+
+* Feel free to open issues and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License.
